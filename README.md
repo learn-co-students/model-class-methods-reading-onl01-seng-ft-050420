@@ -60,7 +60,7 @@ our `index` view, let's add the following:
 <!-- app/views/posts/index.html.erb -->
 
 <!-- new code starts here -->
-<% if !params[:author].blank? %>
+<% if !params[:author].blank? %> 
   <% @posts = Post.where(author: params[:author]) %>
 <% end %>
 <!-- new code ends here -->
